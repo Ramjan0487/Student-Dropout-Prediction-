@@ -1,0 +1,152 @@
+{
+  "raw_shape": [
+    10000,
+    19
+  ],
+  "raw_missing": {
+    "Student_ID": 0,
+    "Age": 0,
+    "Gender": 0,
+    "Family_Income": 500,
+    "Internet_Access": 0,
+    "Study_Hours_per_Day": 500,
+    "Attendance_Rate": 0,
+    "Assignment_Delay_Days": 0,
+    "Travel_Time_Minutes": 0,
+    "Part_Time_Job": 0,
+    "Scholarship": 0,
+    "Stress_Index": 500,
+    "GPA": 0,
+    "Semester_GPA": 0,
+    "CGPA": 0,
+    "Semester": 0,
+    "Department": 0,
+    "Parental_Education": 511,
+    "Dropout": 0
+  },
+  "dropout_counts_raw": {
+    "0": 7646,
+    "1": 2354
+  },
+  "duplicate_rows": 0,
+  "imputation": {
+    "numeric_medians": {
+      "Family_Income": 29740.5,
+      "Study_Hours_per_Day": 4.0,
+      "Stress_Index": 5.5
+    },
+    "categorical_mode_Parental_Education": "Bachelor"
+  },
+  "outliers_capped": {
+    "Age": 33,
+    "Family_Income": 683,
+    "Study_Hours_per_Day": 138,
+    "Attendance_Rate": 57,
+    "Travel_Time_Minutes": 25,
+    "Stress_Index": 137,
+    "GPA": 0,
+    "Semester_GPA": 0,
+    "CGPA": 0
+  },
+  "clean_shape": [
+    10000,
+    22
+  ],
+  "overall_dropout_rate": 0.2354,
+  "dropout_by_department": {
+    "Engineering": 0.24006195147134746,
+    "Arts": 0.23938795656465942,
+    "CS": 0.23404255319148937,
+    "Business": 0.23326673326673328,
+    "Science": 0.2304706453178069
+  },
+  "dropout_by_semester": {
+    "Year 1": 0.2215885947046843,
+    "Year 2": 0.2439710610932476,
+    "Year 3": 0.23879412931376437,
+    "Year 4": 0.23698738170347003
+  },
+  "correlation_with_dropout": {
+    "Stress_Index": 0.24936274322033564,
+    "Assignment_Delay_Days": 0.0823273797985346,
+    "Travel_Time_Minutes": 0.028050320645558825,
+    "Age": 0.007442965035644515,
+    "Family_Income": -0.013301347728958007,
+    "GPA_Trend": -0.034189968910046775,
+    "Study_Hours_per_Day": -0.08710659457950033,
+    "Engagement_Score": -0.14922103604225764,
+    "Attendance_Rate": -0.16356626870352514,
+    "CGPA": -0.4448070469928997,
+    "Semester_GPA": -0.4453962893425481,
+    "GPA": -0.46035197735439254
+  },
+  "model_results": {
+    "Logistic Regression": {
+      "accuracy": 0.743,
+      "precision": 0.47196870925684486,
+      "recall": 0.7685774946921444,
+      "f1": 0.5848142164781907,
+      "roc_auc": 0.8210145259588507
+    },
+    "Decision Tree": {
+      "accuracy": 0.7185,
+      "precision": 0.4323529411764706,
+      "recall": 0.6242038216560509,
+      "f1": 0.5108601216333623,
+      "roc_auc": 0.7381251917979225
+    },
+    "Random Forest": {
+      "accuracy": 0.78,
+      "precision": 0.5271453590192644,
+      "recall": 0.6390658174097664,
+      "f1": 0.5777351247600768,
+      "roc_auc": 0.8068371012512515
+    },
+    "SVM (RBF)": {
+      "accuracy": 0.7345,
+      "precision": 0.4596774193548387,
+      "recall": 0.7261146496815286,
+      "f1": 0.562962962962963,
+      "roc_auc": 0.8029240764886645
+    }
+  },
+  "rf_confusion_matrix": [
+    [
+      1259,
+      270
+    ],
+    [
+      170,
+      301
+    ]
+  ],
+  "feature_importance": {
+    "GPA": 0.21642931815636612,
+    "Semester_GPA": 0.17813061509423347,
+    "CGPA": 0.15488833380111564,
+    "Stress_Index": 0.06850282401371656,
+    "Attendance_Rate": 0.06088639989561465,
+    "Engagement_Score": 0.05193292423173117,
+    "Travel_Time_Minutes": 0.046184197010846875,
+    "Study_Hours_per_Day": 0.04574246554574747,
+    "Age": 0.039420723432464395,
+    "GPA_Trend": 0.0293793939253213,
+    "Family_Income": 0.026881411032382802,
+    "Assignment_Delay_Days": 0.022813280066376965,
+    "Department": 0.014620375829865915,
+    "Semester_Num": 0.012595358981743876,
+    "Parental_Education": 0.010785110551646373,
+    "Part_Time_Job": 0.00634090208720615,
+    "Gender": 0.005068544750355905,
+    "Scholarship": 0.004881041534069393,
+    "Internet_Access": 0.004516780059195032
+  },
+  "best_model": "Logistic Regression",
+  "best_model_metrics": {
+    "accuracy": 0.743,
+    "precision": 0.47196870925684486,
+    "recall": 0.7685774946921444,
+    "f1": 0.5848142164781907,
+    "roc_auc": 0.8210145259588507
+  }
+}
