@@ -1,9 +1,8 @@
-# Student-Dropout-Prediction- NTAMBARA RUKAKA STEVEN
-This notebook provides a comprehensive exploratory data analysis of the Student Dropout dataset, exploring factors that contribute to student dropout rates. Dataset Characteristics:      10,000 student records     19 features (12 numeric, 7 categorical)     Binary target: Dropout (0=No, 1=Yes)     23.54% dropout rate
-
 # Student-Dropout-Prediction-University-of-Kigali
 # AUTHOR — NTAMBARA RUKAKA STEVEN
 # SUPERVISOR — DR MUSABE JEAN BOSCO
+
+This notebook provides a comprehensive exploratory data analysis of the Student Dropout dataset, exploring factors that contribute to student dropout rates. Dataset Characteristics:      10,000 student records     19 features (12 numeric, 7 categorical)     Binary target: Dropout (0=No, 1=Yes)     23.54% dropout rate
 
 The dataset contains student data from University of Kigali Main Campus (and comparable institutional records) used to predict `Dropout` status, addressing the complex reasons behind student attrition. It includes 10,000 samples, focusing on scenarios that help predict student dropout risk. Attributes include age, gender, family income, academic performance, attendance, stress index, and behavioral factors.
 
@@ -75,7 +74,7 @@ Relevant UoK digital properties this analytics work is designed to integrate wit
 | Main website | https://uok.ac.rw | Institutional context, public-facing reporting |
 | Admissions | https://admissions.uok.ac.rw | Enrolment-funnel context for incoming-student risk baselining |
 | Online Application | https://apply.uok.ac.rw | Application-stage demographic/financial-aid data source |
-| LMS (Moodle) "UoK Online Learning Portal" | https://learn.uok.ac.rw/my/ | Source of attendance, submission, and engagement behavioural data |
+| "UoK Online Learning Portal" | https://learn.uok.ac.rw/my/ | Source of attendance, submission, and engagement behavioural data |
 | Student Portal (MIS) | https://mis.uok.ac.rw | Student records, GPA/CGPA, registration & academic-year status |
 | Student Portal (MyCampus) | https://mycampus.uok.ac.rw | Student self-service; potential channel for risk-flag notifications |
 | E-Learning Portal (alias) | https://elearning.uok.ac.rw | Secondary LMS access point |
@@ -336,6 +335,7 @@ Full methodology, tables, and discussion are documented in `outputs/Student_Drop
 - pandas documentation — https://pandas.pydata.org/docs/
 - Apache Spark documentation — https://spark.apache.org/docs/latest/
 - Moodle Web Services documentation — https://docs.moodle.org/dev/Web_services
+- https://github.com/Ramjan0487/Student-Dropout-Prediction
 
 ---
 
