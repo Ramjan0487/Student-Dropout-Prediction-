@@ -335,7 +335,7 @@ Full methodology, tables, and discussion are documented in `outputs/Student_Drop
 - pandas documentation — https://pandas.pydata.org/docs/
 - Apache Spark documentation — https://spark.apache.org/docs/latest/
 - Moodle Web Services documentation — https://docs.moodle.org/dev/Web_services
-- https://github.com/Ramjan0487/Student-Dropout-Prediction
+- Ntambara Rukaka Steven Github — https://github.com/Ramjan0487/Student-Dropout-Prediction
 
 ---
 
